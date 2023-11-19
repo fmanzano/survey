@@ -1,0 +1,21 @@
+/* Question 1, access via HTML view */
+<div style="text-align: center;">
+  <span style="font-family: 'futura-pt', sans-serif;">Hello, Welcome!<br><br>
+  AI is designed to evaluate people's capabilities based on a writing sample.</span>
+</div>
+
+
+/* Enter the code below in Custom CSS field, under look and feel */
+/* This rule hides the 'Powered by Qualtrics' branding */
+#plug {
+  display: none !important;
+}
+/* This will create the bubble-like appearance for your question text: */
+.QuestionText, .QuestionBody {
+    background-color: #f9f9f9; /* Light grey background */
+    border-radius: 20px; /* Rounded corners */
+    padding: 15px; /* Padding inside the bubble */
+    border: 1px solid #dcdcdc; /* Light grey border */
+    margin-bottom: 10px; /* Space between questions */
+    transition: all 0.5s ease-in-out; /* Smooth transition effect for the delay */
+}
