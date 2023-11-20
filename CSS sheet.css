@@ -1,14 +1,28 @@
-/* Enter the code below in Custom CSS field, under look and feel */
-/* This rule hides the 'Powered by Qualtrics' branding */
+/* Global styles */
+body {
+  background-image: url('https://fmanzano.github.io/survey/LuciaAI%20Header.png');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+@media (max-width: 768px) {
+  body {
+    background-size: contain; /* Resize image to fit the screen on smaller devices */
+  }
+}
+
+/* Hide 'Powered by Qualtrics' branding */
 #plug {
   display: none !important;
 }
-/* This will create the bubble-like appearance for your question text: */
+
+/* Bubble-like appearance for question text */
 .QuestionText, .QuestionBody {
     background-color: #f9f9f9; /* Light grey background */
     border-radius: 20px; /* Rounded corners */
     padding: 15px; /* Padding inside the bubble */
     border: 1px solid #dcdcdc; /* Light grey border */
     margin-bottom: 10px; /* Space between questions */
-    transition: all 0.5s ease-in-out; /* Smooth transition effect for the delay */
+    transition: all 0.5s ease-in-out; /* Smooth transition effect */
 }
