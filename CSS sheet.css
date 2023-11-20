@@ -1,14 +1,27 @@
 /* Global styles */
 body {
-  background-image: url('https://fmanzano.github.io/survey/LuciaAI%20Header.png');
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background: black url('https://fmanzano.github.io/survey/LuciaAI%20Header.png') no-repeat center / cover;
+  color: #333; /* Default text color */
+  font-family: Arial, sans-serif; /* Default font */
 }
 
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   body {
     background-size: contain; /* Resize image to fit the screen on smaller devices */
+    background-color: black; /* Maintain black background on smaller devices */
+  }
+
+  .QuestionText, .QuestionBody {
+    font-size: 14px; /* Smaller font size for mobile devices */
+  }
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 1200px) {
+  .QuestionText, .QuestionBody {
+    font-size: 18px; /* Slightly larger font size for larger devices */
+    padding: 20px; /* Increased padding for better readability */
   }
 }
 
